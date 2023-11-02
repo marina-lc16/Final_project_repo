@@ -4,8 +4,8 @@
 SALARIES AND TYPE OF WORKS MODELS**
 
 
-**First part
-EDA & Visualization** 
+**FIRST PART**
+**EDA & Visualization** 
 
 **Introduction:**
 
@@ -154,8 +154,8 @@ In my opinion, after performing this analysis I believe that getting a role rela
 
 
 
-**Second part
-Machine Learning tests**
+**SECOND PART**
+**Machine Learning tests**
 
 **Introduction:**
 
