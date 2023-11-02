@@ -1,13 +1,13 @@
-EDA and Visualization project
+**EDA and Visualization project**
 
-DATA SCIENCE JOBS:
-SALARIES AND TYPE OF WORKS MODELS
+**DATA SCIENCE JOBS:
+SALARIES AND TYPE OF WORKS MODELS**
 
 
-First part
-EDA & Visualization 
+**First part
+EDA & Visualization** 
 
-Introduction:
+**Introduction:**
 
 In recent years, data science roles are more demanded, so it's important to understand how they are evolving in terms of positioning as job offers and their salaries.
 
@@ -17,7 +17,7 @@ The "global salary index" dataset comes from the ai-jobs.net website for roles i
 
 This dataset is processed and updated on a weekly basis, but I'll take the dataset updated on September 29th, 2023.
 
-Libraries used:
+**Libraries used:**
 
 Pandas
 NumPy
@@ -31,28 +31,23 @@ Scikit-learn
 Data: The "global salary index" dataset comes from the ai-jobs.net website for roles in the AI, ML, Data Science space based on internal data obtained from surveys and jobs with open salaries and is processed and updated on a weekly basis, but I'll take the dataset updated on September 29th, 2023.
 
 
-
-
-
-
-
-Hypotheses:
+**Hypotheses:**
 
 What I want to find out with this analysis is to extract the following data from my data set:
 
-	Top 3 highest-payed roles for each year and evaluate the changes between 2020-2023 
+- Top 3 highest-payed roles for each year and evaluate the changes between 2020-2023 
 
-	Which level of experience has the most representation
+- Which level of experience has the most representation
 
-	Evaluate the working model followed per year of work
+- Evaluate the working model followed per year of work
 
--	"Remote_ratio VS company_size": The size of the company influences in the overall amount of work done remotely? 
+	-	"Remote_ratio VS company_size": The size of the company influences in the overall amount of work done remotely? 
 
--	"Remote_ratios VS Salary": Which kind of "type of work" has the highest salaries on 2023? has this changed over the years?
+	-	"Remote_ratios VS Salary": Which kind of "type of work" has the highest salaries on 2023? has this changed over the years?
 
--	"Remote_ratios VS location": create a visualization map to view remote ratios by job areas, year, company size and location
+	-	"Remote_ratios VS location": create a visualization map to view remote ratios by job areas, year, company size and location
 
-Dataset details:
+**Dataset details:**
 
 Here we can find the detail of all the data included
 https://ai-jobs.net/salaries/download/
@@ -95,15 +90,15 @@ M	50 to 250 employees (medium)
 L	more than 250 employees (large)
 
 
-Exploratory Data Analysis (EDA)
+**Exploratory Data Analysis (EDA)**
 
-Finding all variables and understanding them:
+- Finding all variables and understanding them:
 
 To start my analysis, I was to get an overview of my data set. I exported and read the file on the jupyter notebook and examined its contents: size, columns and rows distributions to see the information it contained, i.e. the distribution of roles(job_titles) and salaries (in USD) according to company size, experience levels, employee and company location or proportion of remote work ratio.
 
 To do this I used the functions pd.read, head(), shape(), info(), describe() and df.columns and I explored if the dataset had missing values and the unique values for each column.
 
-Preprocessing: Data cleaning and reduction:
+- Preprocessing: Data cleaning and reduction:
 
 Once I got all the overall information I could start working with the data and think about what changes I could make to clean it up, transform it and ensure more meaningful consistency of certain values.
 
@@ -111,13 +106,13 @@ The data set contains two types of variables in the columns, numerical and categ
 
 I first cleaned the numerical columns and then the categorical ones.
 
-Cleaning numerical:
+- Cleaning numerical:
 
 During the cleaning of the numerical columns, to make a more concrete analysis, the "salary" column was deleted and only the "salary_in_usd" column was left to have all the data in the same currency.
 
 In addition, during the analysis of the numerical columns, it highlighted that in the columns "job_year" and "salary" there is an asymmetry on the left and right, respectively. That means a large difference between the job/salary numbers between 2020 and 2023, probably the data collection probably started at the end of 2020.
 
-Cleaning categorical:
+- Cleaning categorical:
 
 The cleaning and reduction of the categorical data was more extensive.
 
@@ -135,11 +130,11 @@ All coded data were replaced by their actual meaning, and, in addition, the "job
 
 Once the cleaned data were obtained, a new data set was created.
 
-Data visualization:
+**Data visualization:**
 
 With the new clean dataset could started working with the Data visualization, the process of graphical representation of information and data, by using visual elements like charts, graphs, and maps, and data visualization tools like Python or Tableau that provide an accessible way to see and understand patterns, trends, and outliers in data.
 
-Results:
+**Results:**
 
 Nowadays, data science roles are one of the most in-demand and are rapidly growing. 
 
@@ -159,14 +154,14 @@ In my opinion, after performing this analysis I believe that getting a role rela
 
 
 
-Second part
-Machine Learning tests
+**Second part
+Machine Learning tests**
 
-Introduction:
+**Introduction:**
 
 In the second part of the project we tested some machine learning models. The main objective is to see which one performs best in our database to predict salaries.
 
-Machine Learning tests:
+**Machine Learning tests:**
 
 The machine learning models chosen were:
 -	Random Forest Regressor
@@ -174,7 +169,7 @@ The machine learning models chosen were:
 -	Ada Boost Regressor
 -	K-Nearest Neighbors (KNN)
 
-Results:
+**Results:**
 
 After fitting the models we found that the best performing models were the Random Forest Regressor and the Gradient Boosting Regressor, but after applying hyperparameters for a better fit, the best performing model was the Gradient Boosting Regressor.
 
